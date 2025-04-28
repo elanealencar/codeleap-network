@@ -70,8 +70,8 @@ Each post shows the author's name, content, and the time since it was created.
   - Delete Modal: Allows deleting the selected post.
 
 # Screenshots
-![Login Page](assets/initial_page.png)
-![Posts Page](assets/main_page.png)
+![Login Page](/src/assets/initial_page.png)
+![Posts Page](/src/assets/main_page.png)
 
 
 
@@ -159,9 +159,8 @@ Modal de Edição: Permite editar o título e o conteúdo do post.
 Modal de Exclusão: Permite excluir o post selecionado.
 
 # Screenshots
-![Página de Login](assets/initial_page.png)
-![Página de Posts](assets/main_page.png)
-
+![Página de Login](src/assets/initial_page.png)
+![Página de Posts](/src/assets/main_page.png)
 
 
 *Projeto desenvolvido por [Elane Alencar](https://linkedin.com/in/elanealencar/), como desafio técnico para um processo seletivo.
