@@ -1,10 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { useDispatch } from "react-redux"; // Hook para despachar ações
-import { setUsername } from "../store/userSlice"; // Importa a ação para atualizar o username
-
-
-
+import { useDispatch } from "react-redux"; 
+import { setUsername } from "../store/userSlice";
 
 type SignUpModalProps = {
   onSubmit: (username: string) => void;
@@ -30,7 +27,7 @@ const SignUpModal: React.FC<SignUpModalProps> = () => {
         body: JSON.stringify({ username }),
       }).then((response) => {
         if (response.ok) {
-          navigate("/main"); // Navega para a página principal
+          navigate("/main"); // main page
         } else {
           console.error("Erro ao enviar para a API");
         }

@@ -102,7 +102,7 @@ const Mainscreen: React.FC = () => {
 
   return (
     <div className="bg-[#DDDDDD] min-h-screen font-roboto">
-      {/* Barra superior */}
+      {/* Bar */}
       <div className="bg-[#7695EC] w-[800px] mx-auto h-[80px] flex items-center">
         <h1 className="text-white text-[22px] font-bold p-[37px]">CodeLeap Network</h1>
       </div>
@@ -151,7 +151,7 @@ const Mainscreen: React.FC = () => {
         <div className="w-[752px] mx-auto flex flex-col gap-4">
           {posts.map((post) => (
             <div key={post.id} className="border border-[#999999] rounded-2xl bg-white">
-              {/* Header da postagem */}
+              {/* Post Header */}
               <div className="bg-[#7695EC] h-[80px] px-6 flex items-center justify-between rounded-t-md">
                 <h3 className="text-white text-[22px] font-bold">{post.title}</h3>
                 <div className="flex gap-4">
@@ -173,7 +173,7 @@ const Mainscreen: React.FC = () => {
                 </div>
               </div>
 
-              {/* Corpo da postagem */}
+              {/* Posts */}
               <div className="p-6 flex flex-col gap-3">
                 <div className="flex justify-between text-[18px] text-[#777777]">
                   <span className="font-bold">@{username}</span>
@@ -186,7 +186,7 @@ const Mainscreen: React.FC = () => {
         </div>
       </div>
 
-      {/* Modais de edição e exclusão */}
+      {/* Edit and delete modal */}
       {showEditModal && selectedPost && (
         <EditModal
         postId={selectedPost.id}
